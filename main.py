@@ -69,7 +69,7 @@ def main():
 
     # Ouvrir la webcam uniquement si elle est active
     if st.session_state.webcam_active:
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(-1)
 
         while cap.isOpened():
             ret, frame = cap.read()
